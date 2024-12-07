@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://img.icons8.com/material-outlined/24/cat-footprint.png"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <title>Bisky</title>
+  </head>
+  <body>
+    <header class="header">
+      <picture class="logo">
+        <img class="logo-image" src="img/logo.png" alt="logo" />
+      </picture>
+
+      <nav class="nav">
+        <ul class="nav-list">
+          <li>
+            <a href="index.html" class="nav-item">Home</a>
+          </li>
+          <li><a href="aboutmycat.html" class="nav-item">About My Cat</a></li>
+          <li>
+            <a href="getacat.html" class="nav-item">Get your own cat</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+    <main>
+      <section class="section-cta" id="cta">
+        <h1 class="heading-main heading-gta">Get in Touch</h1>
+        <section class="container">
+          <article class="cta">
+            <figure
+              class="cta-image-box"
+              role="img"
+              aria-label="Bisky looking up"
+            ></figure>
+            <section class="cta-text-box">
+              <h3 class="heading-third">Learn more about the humane society</h3>
+              <p class="cta-text">
+                Enter your information to receive an email with information
+                about adopting your future pet today!
+              </p>
+              <form class="cta-form" action="#">
+                <fieldset class="form-group">
+                  <label for="full-name">Full Name</label>
+                  <input
+                    id="full-name"
+                    type="text"
+                    placeholder="Sally Smith"
+                    required
+                  />
+                </fieldset>
+                <fieldset class="form-group">
+                  <label for="email">Email Address</label>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="sallysmith@email.com"
+                    required
+                  />
+                </fieldset>
+                <fieldset class="form-group">
+                  <label for="select-where"
+                    >What were you thinking of adopting?</label
+                  >
+                  <select id="select-where" required>
+                    <option value="">Please choose an option</option>
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                    <option value="bunny">Bunny</option>
+                    <option value="bird">Bird</option>
+                    <option value="other">Other</option>
+                  </select>
+                </fieldset>
+                <button class="btn btn--cta">Get in touch</button>
+              </form>
+            </section>
+          </article>
+        </section>
+      </section>
+    </main>
+    <footer class="footer">
+      <picture class="logo">
+        <a href="#" class="footer-logo">
+          <img class="footer-logo" src="img/logo.png" alt="logo" />
+        </a>
+      </picture>
+      <p class="copyright">Copyright &copy; <span class="year">2064</span></p>
+    </footer>
+
+    <script src="js/getacat.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

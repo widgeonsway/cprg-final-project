@@ -1,0 +1,273 @@
+/******************/
+/* Navigation Bar */
+/******************/
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 4.8rem;
+  padding: 1.4rem;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.4em;
+  transition: color 0.3s ease;
+}
+
+.nav-item:hover,
+.nav-item:active {
+  color: #161626;
+}
+
+/******************/
+/* Logo Styles */
+/******************/
+.logo-image {
+  width: 100px;
+  padding: 1rem;
+}
+
+.footer-logo {
+  width: 60px;
+}
+
+/******************/
+/* Header Styles */
+/******************/
+
+.header-home,
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-image: linear-gradient(
+    to left top,
+    rgba(142, 141, 190, 0.824),
+    rgba(74, 74, 72, 0.897)
+  );
+  position: relative;
+}
+
+.header-home {
+  height: 100vh;
+}
+
+.hero-container {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.heading-main {
+  font-size: 5rem;
+  font-weight: 500;
+  letter-spacing: 1rem;
+  line-height: 5.5rem;
+  color: #fff;
+  text-transform: uppercase;
+  animation: moveFromLeft 1s ease-out;
+}
+.hero-description {
+  font-size: 1.5rem;
+  color: #fff;
+  animation: moveInRight 1s ease-out;
+  margin-bottom: 2rem;
+}
+
+.heading-third {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+/******************/
+/* Gallery Styles */
+/******************/
+
+.heading-about {
+  color: #434273;
+  text-align: center;
+}
+
+.about-bisky {
+  background-color: #fcf3fd;
+
+  display: flex;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.8rem;
+  padding: 1.8rem;
+}
+
+.gallery-item {
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  transition: all 0.4s;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+
+/******************/
+/* Carousel Styles */
+/******************/
+.bisky-container {
+  margin: 20% auto;
+}
+.heading-about {
+  color: #434273;
+  text-align: center;
+  white-space: nowrap;
+}
+.carousel {
+  position: relative;
+  color: #0b0b13;
+  text-align: center;
+  width: 50rem;
+}
+
+.carousel-wrapper {
+  padding: 3rem;
+  border-radius: 20px;
+  background-color: #8e8dbe;
+  transition: background-color 0.1s;
+  position: relative;
+}
+
+.carousel-btn {
+  background-color: #161626;
+  border: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+  position: absolute;
+  box-shadow: 0 12px 24px rgba(192, 96, 248, 0.25);
+  cursor: pointer;
+}
+
+.btn--left {
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn--right {
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+
+.btn-icon {
+  height: 24px;
+  width: 24px;
+  stroke: #fff;
+}
+.carousel-btn:hover {
+  background-color: #434273;
+}
+
+.about-text {
+  font-size: 1.5rem;
+}
+/*********************/
+/* CTA Section */
+/*********************/
+.heading-gta {
+  color: #434273;
+  margin-top: 2rem;
+  padding: 2rem;
+}
+.section-cta {
+  margin: 0 auto;
+  padding: 2rem;
+  width: 100%;
+  background-color: #fcf3fd;
+}
+.bisky-container {
+  padding: 0 2rem;
+}
+.cta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 20px;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(142, 141, 190, 0.824),
+    rgba(74, 74, 72, 0.897)
+  );
+  overflow: hidden;
+}
+.form-group {
+  border: none;
+  border-radius: 20px;
+}
+.cta-text-box {
+  color: #0b0b13;
+  padding: 3rem;
+}
+.cta-text {
+  font-size: 1.8rem;
+  padding-bottom: 1rem;
+}
+.cta .heading-secondary {
+  color: #161626;
+  margin-bottom: 2rem;
+}
+
+.cta-image-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(142, 141, 190, 0.479),
+      rgba(74, 74, 72, 0.897)
+    ),
+    url("../img/picture1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-form {
+  display: grid;
+  column-gap: 3rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label {
+  font-size: 1.6rem;
+}
+
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+}
+
+/******************/
+/* Footer Styles */
+/******************/
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: #8e8dbe;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  color: #4a4a48;
+  text-align: center;
+}
