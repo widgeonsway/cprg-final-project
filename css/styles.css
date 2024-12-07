@@ -1,40 +1,4 @@
 /******************/
-/* Navigation Bar */
-/******************/
-
-.nav-list {
-  list-style: none;
-  display: flex;
-  gap: 4.8rem;
-  padding: 1.4rem;
-}
-
-.nav-item {
-  text-decoration: none;
-  color: #fff;
-  font-weight: 500;
-  font-size: 1.4em;
-  transition: color 0.3s ease;
-}
-
-.nav-item:hover,
-.nav-item:active {
-  color: #161626;
-}
-
-/******************/
-/* Logo Styles */
-/******************/
-.logo-image {
-  width: 100px;
-  padding: 1rem;
-}
-
-.footer-logo {
-  width: 60px;
-}
-
-/******************/
 /* Header Styles */
 /******************/
 
